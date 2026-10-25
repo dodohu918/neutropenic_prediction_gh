@@ -1,0 +1,59 @@
+# --- Python cache ---
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# --- Virtual environments ---
+venv/
+.env/
+.venv/
+.env
+secret/
+
+# --- Logs ---
+logs/
+*.log
+
+# --- Checkpoints / model weights ---
+checkpoints/
+.ipynb_checkpoints/
+*.pt
+*.pth
+*.ckpt
+
+# --- Generated/derived artifacts (reproducible from code; also patient-level → keep out of repo) ---
+*.npz
+*.png
+*.parquet
+
+# --- Data (ignore raw or large data if needed) ---
+# Uncomment if data folder should be ignored:
+# data/
+
+# --- Jupyter Notebook checkpoints ---
+.ipynb_checkpoints/
+
+# --- Python packaging ---
+build/
+dist/
+*.egg-info/
+
+# --- Environment files ---
+.envrc
+*.sqlite3
+.env
+
+# --- Misc ---
+# Ignore files that are auto-generated or temporary
+.idea/
+*.csv
+*.pdf
+.DS_Store
+*.h5
+*.pkl
+*.npy
+*.zip
+# --- Notebooks (may embed patient data in outputs) ---
+*.ipynb

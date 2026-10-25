@@ -1,0 +1,49 @@
+{
+  "pipeline": "event_anchored_block_noleukadj",
+  "threshold": 0.5,
+  "seed": 42,
+  "horizon": 28,
+  "n_trials_lgb_xgb": 150,
+  "n_trials_lr": 75,
+  "results": {
+    "LightGBM": {
+      "default": 0.8500813499052314,
+      "tuned": 0.8565492730691745,
+      "cv_best": 0.8575921305174405,
+      "best_params": {
+        "learning_rate": 0.02284300105163148,
+        "num_leaves": 189,
+        "max_depth": 10,
+        "min_child_samples": 139,
+        "feature_fraction": 0.5244541485582361,
+        "bagging_fraction": 0.9184186033154906,
+        "lambda_l1": 0.0030016913207977637,
+        "lambda_l2": 2.952836569005228,
+        "min_split_gain": 0.35808436040822444
+      }
+    },
+    "XGBoost": {
+      "default": 0.8488494532876357,
+      "tuned": 0.8603688980582253,
+      "cv_best": 0.8564302338943689,
+      "best_params": {
+        "learning_rate": 0.020886122807630556,
+        "max_depth": 12,
+        "min_child_weight": 18,
+        "subsample": 0.5762185427911354,
+        "colsample_bytree": 0.5967244529118848,
+        "reg_lambda": 2.0850676969272084,
+        "reg_alpha": 2.8438726744345866,
+        "gamma": 0.33775475619949513
+      }
+    },
+    "LR": {
+      "default": 0.7993173317231085,
+      "tuned": 0.7967221486066148,
+      "cv_best": 0.8110137849243158,
+      "best_params": {
+        "C": 0.004312759717650419
+      }
+    }
+  }
+}

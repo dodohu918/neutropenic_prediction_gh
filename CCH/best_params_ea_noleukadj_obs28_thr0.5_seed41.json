@@ -1,0 +1,31 @@
+{
+  "pipeline": "event_anchored_block_noleukadj",
+  "threshold": 0.5,
+  "split_seed": 41,
+  "horizon": 28,
+  "n_trials": 150,
+  "n_folds": 5,
+  "max_obs_days": 28,
+  "cv_best_auc": 0.8409264446548997,
+  "cv_default_auc": 0.833887216438218,
+  "cv_gain": 0.007039228216681792,
+  "test_auc_tuned": 0.8502896071940106,
+  "test_auc_default": 0.8503906024564146,
+  "tuning_net_gain": -0.00010099526240403556,
+  "selection_gap": -0.009363162539110848,
+  "best_params": {
+    "objective": "binary",
+    "metric": "auc",
+    "verbose": -1,
+    "bagging_freq": 5,
+    "learning_rate": 0.021610100039555467,
+    "num_leaves": 113,
+    "max_depth": 5,
+    "min_child_samples": 49,
+    "feature_fraction": 0.8767501376167419,
+    "bagging_fraction": 0.8532241593174643,
+    "lambda_l1": 0.27959643933240014,
+    "lambda_l2": 3.521642839040719,
+    "min_split_gain": 0.31412400489622766
+  }
+}
